@@ -7,6 +7,26 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telnet", "..\Telnet\Telnet.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppServerAndAppSession", "..\AppServerAndAppSession\AppServerAndAppSession.csproj", "{498D6447-2A95-4145-A489-400455FF191C}"
 EndProject
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "AzureCloudService", "..\AzureCloudService\AzureCloudService.ccproj", "{69D7E9CC-990A-4E3E-897F-9A71AF831AD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkerRole", "WorkerRole\WorkerRole.csproj", "{5F73AAD8-A638-41B0-AFEA-1FE4F76956A1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Azure", "Azure", "{6E4808AA-3D31-4969-A1C5-6F02FCC6AA2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoteProcessService", "..\RemoteProcessService\RemoteProcessService.csproj", "{162E8232-2AEE-4359-AC2F-FA538D107FA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleRemoteProcessService", "..\ConsoleRemoteProcessService\ConsoleRemoteProcessService.csproj", "{659A1E80-1C89-40F4-ADA5-FC0E8D92F9D4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SuperSocket", "SuperSocket", "{61E89EE1-2E19-48D4-A89C-F59C78269EE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperSocket.SocketBase.Net45", "..\SuperSocket\SocketBase\SuperSocket.SocketBase.Net45.csproj", "{40B77789-EA11-4C05-8F52-86711D7BCAAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperSocket.Common.Net45", "..\SuperSocket\Common\SuperSocket.Common.Net45.csproj", "{A24F4D38-BA9C-4FD6-95B7-4980DE36131A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartSuperSocketByConfiguration", "..\StartSuperSocketByConfiguration\StartSuperSocketByConfiguration.csproj", "{A9C07D44-9E32-4940-8AD0-0C2000ADA05D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperSocket.SocketEngine.Net45", "..\SuperSocket\SocketEngine\SuperSocket.SocketEngine.Net45.csproj", "{153FEF72-191C-43D9-BE71-2B351C7AC760}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,8 +41,49 @@ Global
 		{498D6447-2A95-4145-A489-400455FF191C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{498D6447-2A95-4145-A489-400455FF191C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{498D6447-2A95-4145-A489-400455FF191C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69D7E9CC-990A-4E3E-897F-9A71AF831AD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69D7E9CC-990A-4E3E-897F-9A71AF831AD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69D7E9CC-990A-4E3E-897F-9A71AF831AD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69D7E9CC-990A-4E3E-897F-9A71AF831AD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F73AAD8-A638-41B0-AFEA-1FE4F76956A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F73AAD8-A638-41B0-AFEA-1FE4F76956A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F73AAD8-A638-41B0-AFEA-1FE4F76956A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F73AAD8-A638-41B0-AFEA-1FE4F76956A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{162E8232-2AEE-4359-AC2F-FA538D107FA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{162E8232-2AEE-4359-AC2F-FA538D107FA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{162E8232-2AEE-4359-AC2F-FA538D107FA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{162E8232-2AEE-4359-AC2F-FA538D107FA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{659A1E80-1C89-40F4-ADA5-FC0E8D92F9D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{659A1E80-1C89-40F4-ADA5-FC0E8D92F9D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{659A1E80-1C89-40F4-ADA5-FC0E8D92F9D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{659A1E80-1C89-40F4-ADA5-FC0E8D92F9D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40B77789-EA11-4C05-8F52-86711D7BCAAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40B77789-EA11-4C05-8F52-86711D7BCAAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40B77789-EA11-4C05-8F52-86711D7BCAAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40B77789-EA11-4C05-8F52-86711D7BCAAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A24F4D38-BA9C-4FD6-95B7-4980DE36131A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A24F4D38-BA9C-4FD6-95B7-4980DE36131A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A24F4D38-BA9C-4FD6-95B7-4980DE36131A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A24F4D38-BA9C-4FD6-95B7-4980DE36131A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9C07D44-9E32-4940-8AD0-0C2000ADA05D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9C07D44-9E32-4940-8AD0-0C2000ADA05D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9C07D44-9E32-4940-8AD0-0C2000ADA05D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9C07D44-9E32-4940-8AD0-0C2000ADA05D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{153FEF72-191C-43D9-BE71-2B351C7AC760}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{153FEF72-191C-43D9-BE71-2B351C7AC760}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{153FEF72-191C-43D9-BE71-2B351C7AC760}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{153FEF72-191C-43D9-BE71-2B351C7AC760}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{69D7E9CC-990A-4E3E-897F-9A71AF831AD4} = {6E4808AA-3D31-4969-A1C5-6F02FCC6AA2E}
+		{5F73AAD8-A638-41B0-AFEA-1FE4F76956A1} = {6E4808AA-3D31-4969-A1C5-6F02FCC6AA2E}
+		{162E8232-2AEE-4359-AC2F-FA538D107FA6} = {6E4808AA-3D31-4969-A1C5-6F02FCC6AA2E}
+		{659A1E80-1C89-40F4-ADA5-FC0E8D92F9D4} = {6E4808AA-3D31-4969-A1C5-6F02FCC6AA2E}
+		{40B77789-EA11-4C05-8F52-86711D7BCAAF} = {61E89EE1-2E19-48D4-A89C-F59C78269EE6}
+		{A24F4D38-BA9C-4FD6-95B7-4980DE36131A} = {61E89EE1-2E19-48D4-A89C-F59C78269EE6}
+		{153FEF72-191C-43D9-BE71-2B351C7AC760} = {61E89EE1-2E19-48D4-A89C-F59C78269EE6}
 	EndGlobalSection
 EndGlobal

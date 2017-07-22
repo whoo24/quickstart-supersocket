@@ -1,0 +1,3 @@
+[submodule "SuperSocket"]
+	path = SuperSocket
+	url = https://github.com/whoo24/SuperSocket
